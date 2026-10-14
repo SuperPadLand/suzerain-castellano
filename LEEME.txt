@@ -1,0 +1,60 @@
+SUZERAIN EN CASTELLANO — versión 1.0
+==========================================
+
+Traducción no oficial al castellano de España de Suzerain (Torpor Games), hecha
+por un fan con ayuda de Claude, conversación a conversación y con el contexto de
+cada escena.
+
+QUÉ ESTÁ TRADUCIDO
+- La historia completa de Sordland (Anton Rayne): prólogo, los 11 turnos, los
+  epílogos y todos los finales.
+- Interfaz, menús, noticias, informes, diario, decisiones, decretos, leyes,
+  políticas, situaciones, mapa, fichas de los personajes y el códex entero.
+- El DLC «Kingdom of Rizia» NO está incluido: sigue en inglés.
+
+REQUISITOS
+- Suzerain de Steam en Linux (con Proton), versión 3.1.0. También vale en
+  Steam Deck (en modo escritorio, desde la aplicación Konsole).
+- Python 3.8 o más nuevo. Viene de serie en casi todas las distribuciones; en
+  Debian, Ubuntu y Mint hace falta además el paquete python3-venv:
+      sudo apt install python3-venv
+- Conexión a internet la primera vez: el instalador descarga UnityPy (unos 30 MB),
+  la herramienta que edita los archivos del juego. Se guarda aparte, en
+  ~/.local/share/suzerain-castellano, y no toca nada más del sistema.
+- No hace falta ser administrador (nada de sudo).
+
+INSTALAR
+1. Cierra el juego.
+2. Abre una terminal dentro de esta carpeta y ejecuta:
+       bash instalar.sh
+   Busca el juego solo en tus bibliotecas de Steam. Si no lo encuentra, pásale
+   la carpeta del juego:
+       bash instalar.sh "/ruta/a/SteamLibrary/steamapps/common/Suzerain"
+3. Abre Suzerain. Funciona también con partidas ya empezadas.
+
+El instalador no copia archivos del juego: traduce los tuyos y guarda una copia
+de los originales en ~/.local/share/suzerain-castellano/originales.
+
+SI STEAM ACTUALIZA EL JUEGO
+Si después de una actualización vuelve el inglés, ejecuta otra vez instalar.sh.
+Si la actualización ha cambiado algún texto en inglés, ese texto se queda en
+inglés y el instalador lo avisa; el resto se traduce igual.
+
+DESINSTALAR
+    bash desinstalar.sh
+o, en Steam: Suzerain > Propiedades > Archivos instalados > Verificar integridad
+de los archivos del juego.
+
+PROBLEMAS
+- «No encuentro Suzerain»: pásale la carpeta del juego (ver «Instalar»).
+- «Suzerain está abierto»: cierra el juego del todo y repite.
+- «No se pudo crear el entorno de Python»: instala python3-venv (ver
+  «Requisitos»).
+- Muchos textos en inglés después de instalar: puede que tengas otro mod o
+  traducción puesta. Verifica los archivos en Steam y vuelve a instalar.
+- El registro de la última instalación queda en
+  ~/.local/share/suzerain-castellano/ultimo-registro.txt
+
+De momento solo hay instalador para Linux.
+
+Suzerain es © Torpor Games. Esta traducción no está afiliada a ellos.
