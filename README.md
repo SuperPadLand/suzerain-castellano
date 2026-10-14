@@ -59,4 +59,4 @@ De momento solo hay instalador para Linux.
 
 ---
 
-Suzerain es © Torpor Games. Esta traducción no está afiliada a ellos.
+Suzerain es © Torpor Games. Esta traducción no está afiliada a ellos. Tux, el pingüino de Linux, es de Larry Ewing (lewing@isc.tamu.edu), hecho con The GIMP.
